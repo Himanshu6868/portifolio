@@ -52,7 +52,7 @@ export default function Home() {
         <section className="container py-24 md:py-32 space-y-8">
           <div className="max-w-[64rem] space-y-4">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Hi, I&apos;m <span className="text-primary">Himanshu Yadav</span>
+              Hi, I&apos;m <span className="text-primary">Himanshu</span>
             </h1>
             <p className="text-xl text-muted-foreground md:text-2xl">
               A passionate web developer crafting beautiful digital experiences
