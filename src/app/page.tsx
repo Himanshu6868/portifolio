@@ -1,11 +1,12 @@
-import Link from "next/link";
-import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
+"use client";
 import { ExperienceItem } from "@/components/experience-item";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { ArrowRight, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
 import { ProjectCard } from "@/components/project-card";
 import { SkillBadge } from "@/components/skill-badge";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -147,7 +148,7 @@ export default function Home() {
         <section id="projects" className="py-24 md:py-32">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
-              My Projects
+              Personal Projects
             </h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
@@ -168,6 +169,40 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="projects" className="py-24 md:py-32">
+          <div className="container">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
+              Work Projects
+            </h2>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <ProjectCard
+                title="Sumairo - B2B Procurement Platform"
+                description="Sumairo is a technology-driven B2B procurement platform focused on India’s industrial ecosystem. It connects buyers and suppliers of raw materials, offering powerful tools like live price tracking, interactive dashboards, and an AI chatbot to make procurement more transparent, data-driven, and efficient."
+                tags={[
+                  "Next.js",
+                  "Tailwind CSS",
+                  "SCSS",
+                  "REST APIs",
+                  "Redux",
+                  "Echarts",
+                  "Socket.io",
+                  "AI Integration",
+                  "Cognito Auth",
+                ]}
+                image="/sumairo.svg"
+                link="http://sumairo.in/"
+              />
+              <ProjectCard
+                title="HeroFinance - Loan Management Platform"
+                description="HeroFinance is a comprehensive loan management platform designed to streamline the entire loan lifecycle. It offers features for loan origination, processing, underwriting, servicing, and collections, all within a user-friendly interface. The platform aims to enhance efficiency, compliance, and customer experience in the lending process."
+                tags={["Next.js", "TypeScript", "Strapi", "SCSS"]}
+                image="/heroFinCorp.png"
+                link="https://www.herofincorp.com/"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Skills Section */}
         <section id="skills" className="container py-24 md:py-32">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
@@ -179,6 +214,7 @@ export default function Home() {
             <SkillBadge name="TypeScript" />
             <SkillBadge name="React" />
             <SkillBadge name="Next.js" />
+            <SkillBadge name="Redux" />
             <SkillBadge name="Tailwind CSS" />
             <SkillBadge name="Node.js" />
             <SkillBadge name="Express" />

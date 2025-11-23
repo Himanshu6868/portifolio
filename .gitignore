@@ -17,6 +17,11 @@
 /.next/
 /out/
 
+# Node.js lock files
+package-lock.json
+package-json.lock
+
+
 # production
 /build
 
