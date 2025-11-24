@@ -185,7 +185,7 @@ export default function Home() {
                   "Supabase Database",
                   "Supabase OAuth",
                 ]}
-                image="/demo-image.svg"
+                image="/demo-image.png"
                 link="https://sachin-new-ygs.vercel.app/"
               />
               {/* <ProjectCard
