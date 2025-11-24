@@ -172,6 +172,35 @@ export default function Home() {
         <section id="projects" className="py-24 md:py-32">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
+              Freelance Projects
+            </h2>
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <ProjectCard
+                title="Yadav Gardening Services"
+                description="It is an daily expense management web application that helps users track and manage their daily expenses efficiently. The app allows users to add, edit, and categorize expenses, providing insights into spending patterns through visual charts and reports."
+                tags={[
+                  "Next.js",
+                  "Tailwind CSS",
+                  "Supabase APIs",
+                  "Supabase Database",
+                  "Supabase OAuth",
+                ]}
+                image="/demo-image.svg"
+                link="https://sachin-new-ygs.vercel.app/"
+              />
+              {/* <ProjectCard
+                title="HeroFinance - Loan Management Platform"
+                description="HeroFinance is a comprehensive loan management platform designed to streamline the entire loan lifecycle. It offers features for loan origination, processing, underwriting, servicing, and collections, all within a user-friendly interface. The platform aims to enhance efficiency, compliance, and customer experience in the lending process."
+                tags={["Next.js", "TypeScript", "Strapi", "SCSS"]}
+                image="/heroFinCorp.png"
+                link="https://www.herofincorp.com/"
+              /> */}
+            </div>
+          </div>
+        </section>
+        <section id="projects" className="py-24 md:py-32">
+          <div className="container">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-12">
               Work Projects
             </h2>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
