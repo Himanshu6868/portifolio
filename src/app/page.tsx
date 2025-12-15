@@ -165,6 +165,13 @@ export default function Home() {
                 image="/festi.png"
                 link="https://festi.social/events"
               />
+              <ProjectCard
+                title="Simple Coco Cola Ui"
+                description="Just created this ui for timepass when I had nothing to do in my office."
+                tags={["Next.js", "TypeScript", "GSAP", "Tailwind CSS"]}
+                image="/coco-cola.png"
+                link="https://coca-cola-animation-ten.vercel.app/"
+              />
             </div>
           </div>
         </section>
